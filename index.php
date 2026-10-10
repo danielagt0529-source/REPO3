@@ -148,7 +148,7 @@ $form = $edit ?: ['id' => '', 'destinatario' => '', 'direccion' => '', 'descripc
       <label>Dirección de entrega <span>*</span><input name="direccion" maxlength="255" required value="<?= h($form['direccion']) ?>" placeholder="Calle, número, barrio, ciudad"></label>
       <label>Descripción del envío <span>*</span><textarea name="descripcion" required rows="3" placeholder="¿Qué contiene el envío?"><?= h($form['descripcion']) ?></textarea></label>
       <label>Estado del envío<select name="estado"><?php foreach (['Pendiente','En camino','Entregado'] as $s): ?><option value="<?= h($s) ?>" <?= $form['estado'] === $s ? 'selected' : '' ?>><?= h($s) ?></option><?php endforeach; ?></select></label>
-      <div class="form-actions"><button class="secondary-btn" type="button" onclick="closeForm()">Cancelar</button><button class="primary-btn" type="submit"><?= $edit ? 'Guardar cambios' : 'Crear envío'} <span>↗</span></button></div>
+      <div class="form-actions"><button class="secondary-btn" type="button" onclick="closeForm()">Cancelar</button><button class="primary-btn" type="submit"><?= $edit ? 'Guardar cambios' : 'Crear envío' ?> <span>↗</span></button></div>
     </form>
   </div>
 </div>
