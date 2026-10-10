@@ -9,7 +9,7 @@ declare(strict_types=1);
 $dbHost = getenv('DB_HOST') ?: 'mysql-danigt.alwaysdata.net';
 $dbName = getenv('DB_NAME') ?: 'danigt_enviosgit';
 $dbUser = getenv('DB_USER') ?: 'danigt';
-$dbPass = getenv('DB_PASS') ?: 'CAMBIA_ESTA_CLAVE';
+$dbPass = getenv('DB_PASS') ?: 'clase1234';
 
 $dsn = "mysql:host={$dbHost};dbname={$dbName};charset=utf8mb4";
 $options = [
