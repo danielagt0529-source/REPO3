@@ -6,10 +6,10 @@ declare(strict_types=1);
  * Recomendación: en producción, define estas credenciales mediante variables de entorno
  * y no publiques este archivo en repositorios.
  */
-$dbHost = getenv('DB_HOST') ?: 'mysql-danigt.alwaysdata.net';
-$dbName = getenv('DB_NAME') ?: 'danigt_enviosgit';
-$dbUser = getenv('DB_USER') ?: 'danigt';
-$dbPass = getenv('DB_PASS') ?: 'clase1234';
+$dbHost = 'mysql-danigt.alwaysdata.net';
+$dbName = 'danigt_enviosgit';
+$dbUser = 'danigt';
+$dbPass = 'clase1234';
 
 $dsn = "mysql:host={$dbHost};dbname={$dbName};charset=utf8mb4";
 $options = [
